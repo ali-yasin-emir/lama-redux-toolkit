@@ -1,38 +1,254 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2.4em;
+  /* gap: 24em; */
+
+  padding: 1.4em 4em;
+  background-color: antiquewhite;
+  flex: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo {
+  text-transform: capitalize;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.4em;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+.search__input {
+  padding: 0.6em 12em 0.6em 0.6em;
+  border-radius: 9px;
+}
+
+.acc {
+  text-transform: capitalize;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.acc__img {
+  object-fit: cover;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.acc__name {
+}
+.acc__icon {
+  stroke: #000000;
+  width: 1.4em;
+  height: 1.4em;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  flex-wrap: wrap;
+  /* gap: 12em; */
+}
+
+/* LEFTBAR */
+
+.leftbar {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em 1em 2em;
+  font-size: 2em;
+  gap: 0.8em;
+  flex: 1;
+}
+
+.leftbar__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
+  gap: 0.8em;
+  padding: 0.8em;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.icon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.icon__svg {
+}
+
+.leftbar__name {
+  text-transform: capitalize;
+}
+
+/* UPDATE */
+
+.update {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 3em 6em;
+  flex: 1;
+}
+.update-header {
+  text-transform: capitalize;
+  font-size: 2.4em;
+}
+.update-info {
+  display: flex;
+  flex-direction: column;
+  text-transform: initial;
+  gap: 0.8em;
+  padding: 1em;
+  font-size: 1.6em;
+  border-bottom: 1px solid rgb(224, 224, 224);
+}
+.update-info__text {
+  padding: 0.8em;
+  border-radius: 9px;
+  background-color: rgb(226, 231, 154);
+}
+.update-info__btn {
+  width: 12rem;
+  height: 3rem;
+  border: 0;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: palevioletred;
+  padding: 0.5em 1em;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+.profile-header {
+  text-transform: capitalize;
+}
+.profile-image-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2em;
+  text-transform: capitalize;
+}
+.profile-image {
+}
+.profile-image__button {
+  font-size: 1.4em;
+  color: green;
+  cursor: pointer;
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  text-transform: capitalize;
+  font-size: 1.6em;
+  padding: 1em 0em;
+}
+.profile-info__elements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.profile-info__email {
+}
+.profile-info__password {
+}
+
+.profile-info__update {
+  width: 12rem;
+  height: 3rem;
+  border: 0;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: rgb(48, 119, 78);
+  padding: 0.5em 1em;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.5em 8em 0.5em 0.5em;
+}
+
+/* RIGHTBAR */
+
+.rightbar {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-transform: capitalize;
+  font-size: 1rem;
+  gap: 2em;
+  flex: 1;
+}
+.rightbar__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2em 0em;
 }
 
-.App-link {
-  color: #61dafb;
+.rightbar__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4em;
+}
+.rightbar__button {
+  border: 0;
+  background-color: chocolate;
+  padding: 0.6em 2.4em;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.rightbar__img {
+  width: 24rem;
+  height: 18rem;
+  object-fit: contain;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+  color: red;
+  font-size: 1.4rem;
 }
